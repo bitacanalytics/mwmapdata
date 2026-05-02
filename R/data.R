@@ -64,7 +64,7 @@
 #' Traditional Authority (TA) level administrative boundaries representing
 #' third-level subdivisions within districts, governed by traditional leaders.
 #'
-#' @format An sf object with 433 features and 15 fields:
+#' @format An sf object with 433 features and 16 fields:
 #' \describe{
 #'   \item{ADM3_EN}{Traditional Authority name}
 #'   \item{ADM3_PCODE}{Traditional Authority code}
@@ -78,6 +78,7 @@
 #'   \item{area_sqkm}{Area in square kilometres}
 #'   \item{center_lat}{Centroid latitude}
 #'   \item{center_lon}{Centroid longitude}
+#'   \item{REGION}{Region name (convenience alias for ADM1_EN)}
 #'   \item{DISTRICT}{District name (convenience alias for ADM2_EN)}
 #'   \item{TA}{Traditional Authority name (convenience alias for ADM3_EN)}
 #'   \item{geometry}{MULTIPOLYGON geometry for TA boundaries}
@@ -86,29 +87,27 @@
 #' @keywords datasets
 "mw_level_3"
 
-#' Major Lakes of Malawi
+#' Lake Malawi Boundary
 #'
-#' Spatial data for the major lakes in Malawi:
-#' Lake Malawi (Lake Nyasa), Lake Malombe, and Lake Chilwa.
+#' Spatial data for Lake Malawi, also known as Lake Nyasa.
 #'
-#' @format An sf object with 3 features and 3 fields:
+#' @format An sf object with 1 feature and Natural Earth lake attributes:
 #' \describe{
 #'   \item{name}{Lake name}
-#'   \item{area_km2}{Approximate surface area in square kilometres}
-#'   \item{max_depth_m}{Maximum depth in metres (where available)}
-#'   \item{geometry}{MULTIPOLYGON geometry for lake boundaries}
+#'   \item{name_alt}{Alternative lake name}
+#'   \item{geometry}{MULTIPOLYGON geometry for the lake boundary}
 #' }
-#' @source Malawi Spatial Data Platform (MASDAP) / Department of Surveys
+#' @source Natural Earth lake polygons
 #' @keywords datasets
 "major_lakes"
 
 #' Legacy Malawi States Dataset
 #'
 #' @description
-#' **Deprecated.** Legacy dataset containing Malawi states.
-#' Please use \code{mw_level_2} instead.
+#' **Deprecated.** Legacy district-level dataset retained for backwards
+#' compatibility. Please use \code{mw_level_2} instead.
 #'
-#' @format An sf object (deprecated)
+#' @format An sf object equivalent to \code{mw_level_2}
 #' @keywords internal
 "malawi_data"
 

@@ -1,3 +1,11 @@
+# mwmapdata 1.0.0
+
+- First stable data-package release for the CRAN split from `mwmap`.
+- Rebuilt `mw_level_0`, `mw_level_1`, `mw_level_2`, and `mw_level_3` from the included OCHA HDX / National Statistics Office of Malawi COD-AB shapefiles.
+- Added validation to the data build script for expected feature counts, EPSG:4326 output, and geometry validity.
+- `malawi_data` is now a deprecated alias for the current `mw_level_2` district boundaries.
+- Raw shapefiles are excluded from the built package to keep CRAN package size under control.
+
 # mwmapdata 0.2.0
 
 - Updated all boundary data to OCHA HDX (National Statistics Office of Malawi), Common Operational Datasets (COD-AB) version 02, valid from 05 April 2023 <https://data.humdata.org/dataset/cod-ab-mwi>.

@@ -1,4 +1,6 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^data-raw$
+^mwi_admin_boundaries\.shp$
 ^README\.md$
+^cran-comments\.md$

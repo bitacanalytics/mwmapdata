@@ -4,14 +4,14 @@
 
 ## Datasets
 
-| Object        | Level | Features | Description                              |
-|---------------|-------|----------|------------------------------------------|
-| `mw_level_0`  | 0     | 1        | National boundary                        |
-| `mw_level_1`  | 1     | 3        | Administrative regions (N, C, S)         |
-| `mw_level_2`  | 2     | 32       | Districts (incl. 4 city districts)       |
-| `mw_level_3`  | 3     | 433      | Traditional authorities                  |
-| `major_lakes` | —     | 3        | Lake Malawi, Malombe, Chilwa             |
-| `malawi_data` | —     | —        | Legacy district dataset (**deprecated**) |
+| Object        | Level | Features | Description                                    |
+|---------------|---------------|---------------|-----------------------------|
+| `mw_level_0`  | 0     | 1        | National boundary                              |
+| `mw_level_1`  | 1     | 3        | Administrative regions (N, C, S)               |
+| `mw_level_2`  | 2     | 32       | Districts (incl. 4 city districts)             |
+| `mw_level_3`  | 3     | 433      | Traditional authorities                        |
+| `major_lakes` | —     | 1        | Lake Malawi / Lake Nyasa                       |
+| `malawi_data` | 2     | 32       | Legacy alias for `mw_level_2` (**deprecated**) |
 
 All levels include `area_sqkm`, `center_lat`, and `center_lon` columns.
 
@@ -48,7 +48,8 @@ mwmapdata_check()
 
 - `mw_level_2` contains **32 districts**, including the 4 city districts (Blantyre City, Lilongwe City, Mzuzu City, Zomba City) added in the 2023 boundary update. Earlier datasets had 28 districts.
 - `mw_level_3` contains **433 traditional authorities**, up from \~250 in earlier boundary versions.
-- The `malawi_data` object is retained for backwards compatibility only. Use `mw_level_2` instead.
+- The `major_lakes` object contains Lake Malawi / Lake Nyasa. The administrative boundary source files do not include Lake Malombe or Lake Chilwa polygons.
+- The `malawi_data` object is retained for backwards compatibility only and mirrors `mw_level_2`. Use `mw_level_2` instead.
 
 ## License
 

@@ -5,13 +5,13 @@
 \alias{malawi_data}
 \title{Legacy Malawi States Dataset}
 \format{
-An sf object (deprecated)
+An sf object equivalent to \code{mw_level_2}
 }
 \usage{
 malawi_data
 }
 \description{
-\strong{Deprecated.} Legacy dataset containing Malawi states.
-Please use \code{mw_level_2} instead.
+\strong{Deprecated.} Legacy district-level dataset retained for backwards
+compatibility. Please use \code{mw_level_2} instead.
 }
 \keyword{internal}

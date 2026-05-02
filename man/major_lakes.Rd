@@ -3,24 +3,22 @@
 \docType{data}
 \name{major_lakes}
 \alias{major_lakes}
-\title{Major Lakes of Malawi}
+\title{Lake Malawi Boundary}
 \format{
-An sf object with 3 features and 3 fields:
+An sf object with 1 feature and Natural Earth lake attributes:
 \describe{
 \item{name}{Lake name}
-\item{area_km2}{Approximate surface area in square kilometres}
-\item{max_depth_m}{Maximum depth in metres (where available)}
-\item{geometry}{MULTIPOLYGON geometry for lake boundaries}
+\item{name_alt}{Alternative lake name}
+\item{geometry}{MULTIPOLYGON geometry for the lake boundary}
 }
 }
 \source{
-Malawi Spatial Data Platform (MASDAP) / Department of Surveys
+Natural Earth lake polygons
 }
 \usage{
 major_lakes
 }
 \description{
-Spatial data for the major lakes in Malawi:
-Lake Malawi (Lake Nyasa), Lake Malombe, and Lake Chilwa.
+Spatial data for Lake Malawi, also known as Lake Nyasa.
 }
 \keyword{datasets}

@@ -5,7 +5,7 @@
 \alias{mw_level_3}
 \title{Malawi Administrative Boundaries - Level 3 (Traditional Authorities)}
 \format{
-An sf object with 433 features and 15 fields:
+An sf object with 433 features and 16 fields:
 \describe{
 \item{ADM3_EN}{Traditional Authority name}
 \item{ADM3_PCODE}{Traditional Authority code}
@@ -19,6 +19,7 @@ An sf object with 433 features and 15 fields:
 \item{area_sqkm}{Area in square kilometres}
 \item{center_lat}{Centroid latitude}
 \item{center_lon}{Centroid longitude}
+\item{REGION}{Region name (convenience alias for ADM1_EN)}
 \item{DISTRICT}{District name (convenience alias for ADM2_EN)}
 \item{TA}{Traditional Authority name (convenience alias for ADM3_EN)}
 \item{geometry}{MULTIPOLYGON geometry for TA boundaries}
